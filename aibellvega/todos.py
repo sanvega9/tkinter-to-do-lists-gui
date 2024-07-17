@@ -38,7 +38,7 @@ def marking_task_Completed():
     except:
         messagebox.showwarning("Warning", "You must enter a tasks!")
 
-#function to add an entry to the history and save it to the file
+# function to add an entry to the history and save it to the file
 def add_history_file(entry):
     history_lists.insert(tk.END,entry)
     try:
@@ -97,7 +97,7 @@ complete_button.pack(pady=5)
 tasks_label = tk.Label(app, text = " Tasks List ", bg='#102C57',fg='#ffffff')
 tasks_label.pack()
 
-#display the text listbox 
+# display the text listbox 
 
 tasks_list = tk.Listbox(app, width=35, height=15)
 tasks_list.pack(pady=10)
@@ -111,7 +111,7 @@ delete_history.pack(pady=5)
 delete_history_entry_Btn = tk.Button(app, text="DELETE SELECTED TASK IN HISTORY", command=delete_history_entry, bg='#FFE4C9')
 delete_history_entry_Btn.pack(pady=5)
 
-# #Label for history archive
+# Label for history archive
 history_lists = tk.Listbox(app, width= 70, height=15)
 history_lists.pack(pady=10)
 
